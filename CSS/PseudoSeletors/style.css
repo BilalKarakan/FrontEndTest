@@ -1,0 +1,71 @@
+/* Pseudo Element */
+p::first-line{
+  font-weight: bold;
+  color: brown;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+p.about::first-line{
+  color:green;
+}
+p::first-letter{
+  font-size: 48px;
+}
+p::after{
+  content: "";
+  display: block;
+  background-color: orange;
+  padding: 10px;
+}
+
+/* Pseudo Class */
+ul li{
+  padding: 10px;
+  margin-bottom: 1px;
+  list-style: none;
+}
+ul li:first-child{
+  background-color: aqua;
+}
+
+ul li:last-child{
+  background-color: aqua;}
+
+ul li:nth-of-type(even){
+  border: 5px solid lightgreen;
+}
+ul li:nth-of-type(odd){
+  border: 5px solid blue;
+}
+
+a {
+  padding: 5px 8px;
+  text-decoration: none;
+  display: block;
+  width: 80px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
+a:link{
+  color:red;
+}
+a:visited{
+  color:gray;
+}
+a:hover{
+  color: white;
+  background-color: green;
+}
+a:active{
+  color:green;
+  background-color: gold;
+}
+span{
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+div:hover span{
+  display: block;
+}
