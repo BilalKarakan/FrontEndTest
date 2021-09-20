@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Display</title>
+  <style>
+    /* Display : none | inline | block | inline-block */
+    /* Browser Defaults */
+    /* Override Defaults */
+    div{
+      width: 200px;
+      height: 200px;
+      background: aqua;
+      margin: 5px;
+    }
+    #first{
+      display: none;
+    }
+    span{
+      background: orange;
+      /*width: 500px;*/ /* inline etiketlere genişlik ve yükseklik verilemez.Display özelliği block olarak değiştirilmelidir.*/
+      /*display: block;*/
+      display: inline-block; /* Bu şekilde genişlik ve yükseklik verebiliriz. Varsayılan olarak inline gibi davranır. Yazılar yan yana gelir. */
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="first">First</div>
+  <div id="second">Second</div>
+
+  <span>test1</span>
+  <span>test2</span>
+  <span>test3</span>
+  <br>
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Contract</a>
+
+</body>
+</html>
