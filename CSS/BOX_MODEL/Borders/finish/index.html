@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Borders</title>
+  <style>
+    body{
+      margin: 0px;
+    }
+    .box{
+      width: 120px;
+      height: 120px;
+      background: lightgray;
+      margin: 10px;
+      padding: 10px;
+    }
+    #first{
+      /* border: 1px solid red; */
+
+      /* border-width: 1px; */
+      /* border-style: solid; */
+      /* border-color: red; */
+
+      border-top-width: 2px;
+      border-right-width: 4px;
+      border-bottom-width: 6px;
+      border-left-width: 8px;
+
+      border-top-style: solid;
+      border-right-style: dashed;
+      border-bottom-style: groove;
+      border-left-style: double;
+
+      border-top-color: red;
+      border-right-color: blue;
+      border-bottom-color: yellow;
+      border-left-color: green;
+    }
+    #second{
+      border-top: 2px solid blue;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 40px;
+    }
+    #third{
+      border: 3px solid green;
+      /* border-radius: 20px; */
+      border-radius: 50%;
+    }
+    #msgbox{
+      border-left: 5px solid black;
+      background: lightgray;
+      margin: 10px;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="box" id="first">Box1</div>
+  <div class="box" id="second">Box2</div>
+  <div class="box" id="third">Box3</div>
+
+  <div id="msgbox">
+    Message Box
+  </div>
+
+</body>
+</html>
